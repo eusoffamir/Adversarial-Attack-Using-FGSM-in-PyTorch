@@ -103,7 +103,7 @@ loss.backward()
 data_grad = image.grad.data
 
 # FGSM attack
-epsilon = 0.2
+epsilon = 0.03
 adv_image = fgsm_attack(image, epsilon, data_grad)
 
 # Re-check prediction
